@@ -28,4 +28,13 @@ public class Robot
     {
       //Add Right Code Later
     }
+    public void wake()
+    {
+      //Add Wake Code Later
+    }
+    public void rest()
+    {
+      //Add rest Code Later
+    }
   }
+  
