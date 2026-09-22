@@ -1,6 +1,8 @@
+import java.util.concurrent.TimeUnit;
+
 public class robot_runner
   {
-    public static void main(String[] agrs)
+    public static void main(String[] agrs) throws InterruptedException
     {
       System.out.println("Runner");
       Robot robot = new Robot();
