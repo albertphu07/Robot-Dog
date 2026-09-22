@@ -36,5 +36,9 @@ public class Robot
     {
       //Add rest Code Later
     }
+    public void stop()
+    {
+      //Add Stop Code Later
+    }
   }
   
