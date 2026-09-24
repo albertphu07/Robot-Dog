@@ -8,11 +8,11 @@ import java.util.Map;
 
 public class Robot
   {
-      private double Angle;
-      private String Direction;
+      private double angle;
+      private String direction;
       private static final int[] PIN_ADDRESS = {4,27,22,23,24,25,5,6,26,13,12,21};
 
-      public static void main(String[] args) throws Interupted Exception
+      public static void main(String[] args) throws InterruptedException
     {
       Context pi4j = Pi4J.newAutoContext();
 
@@ -25,7 +25,7 @@ public class Robot
             .name("GPIO Pin" + address)
             .address(address)
             .shutdown(DigitalState.LOW)
-            .inital(DigitalState.LOW);
+            .initial(DigitalState.LOW);
 
           DigitalOutput digitalOutput = pi4j.create(config);
           pins.put(address, digitalOutput);
@@ -38,8 +38,8 @@ public class Robot
     }
     public Robot (double Ag, String Dir)
     {
-      Angle = Ag;
-      Direction = Dir;
+      angle = Ag;
+      direction = Dir;
     }
     public void forward() 
     {
